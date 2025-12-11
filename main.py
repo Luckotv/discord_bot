@@ -129,50 +129,6 @@ def gerar_resposta(cerebro):
 "Se eu disser que gosto de você… será que incomoda"
 
     ]
-    respostas_adalva = [
-        "A Dalva foi comida por 2050 homens diferentes",
-
-"Eu amo a Dalva, mas ela não presta",
-
-"Se a Dalva me pedir um rim, eu dou",
-
-"Fui comprar pão e a Dalva já tava na esquina com o Zé do gás",
-
-"Ela disse que ia na igreja, voltou com cheiro de cerveja",
-
-"Dalva é meu orgulho e minha vergonha",
-
-"Se amar a Dalva é errado, então eu sou criminoso",
-
-"O bairro inteiro conhece a Dalva… de um jeito ou de outro",
-
-"Falar mal da Dalva pode não, só eu posso",
-
-"Essa mulher me dá chifre com gosto",
-
-"Eu já perdi as contas de quantos pegaram a Dalva",
-
-"Mesmo assim, eu amo aquela desgraçada",
-
-"Dalva disse que me ama, mas ama o boteco mais ainda",
-
-"Fui no bar e ouvi três me chamando de corno, tudo culpa da Dalva",
-
-"Dalva só me procura quando tá sem dinheiro",
-
-"Essa mulher não vale um real, mas vale meu coração",
-
-"Se a Dalva quiser, eu largo tudo agora",
-
-"Dalva é pior que vício, não largo",
-
-"Ela me traiu, mas pediu desculpa e eu aceitei",
-
-"Se for pra ser corno, que seja pela Dalva"
-
-
-    ]
-
     if personalidade == "calmo":
         resposta = random.choice(respostas_calmo)
     else:
@@ -210,53 +166,5 @@ async def on_ready():
 @bot.command()
 async def baitola(ctx):
     name = ctx.author.name
-    await ctx.send(f"{name} baitola é o lelouch")
-respostas_adalva = [
-        "A Dalva foi comida por 2050 homens diferentes",
-
-"Eu amo a Dalva, mas ela não presta",
-
-"Se a Dalva me pedir um rim, eu dou",
-
-"Fui comprar pão e a Dalva já tava na esquina com o Zé do gás",
-
-"Ela disse que ia na igreja, voltou com cheiro de cerveja",
-
-"Dalva é meu orgulho e minha vergonha",
-
-"Se amar a Dalva é errado, então eu sou criminoso",
-
-"O bairro inteiro conhece a Dalva… de um jeito ou de outro",
-
-"Falar mal da Dalva pode não, só eu posso",
-
-"Essa mulher me dá chifre com gosto",
-
-"Eu já perdi as contas de quantos pegaram a Dalva",
-
-"Mesmo assim, eu amo aquela desgraçada",
-
-"Dalva disse que me ama, mas ama o boteco mais ainda",
-
-"Fui no bar e ouvi três me chamando de corno, tudo culpa da Dalva",
-
-"Dalva só me procura quando tá sem dinheiro",
-
-"Essa mulher não vale um real, mas vale meu coração",
-
-"Se a Dalva quiser, eu largo tudo agora",
-
-"Dalva é pior que vício, não largo",
-
-"Ela me traiu, mas pediu desculpa e eu aceitei",
-
-"Se for pra ser corno, que seja pela Dalva"
-
-
-    ]
-@bot.command()
-async def dalva(ctx):
-     random.shuffle(respostas_adalva)
-     dalvaa = random.choice(respostas_adalva)
-     await ctx.send(dalvaa)
+    await ctx.send(f"{name} baitola é o vc")
 bot.run("") #coloca o token do seu bot
